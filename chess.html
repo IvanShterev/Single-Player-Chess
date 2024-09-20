@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="stylesheet" href="chess.css">
+</head>
+<body>
+
+    <div class="choose-side-container">
+
+        <h1>Choose a side:</h1>
+
+        <div class="btns-container">
+            <button id="choose-white" class="choose-btn"></button>
+
+            <button id="choose-black" class="choose-btn"></button>
+        </div>
+
+    </div>
+    
+    <div class="container">
+
+        <div class="board" style="display: none;">
+
+            <div class="numbers-container">
+                <span class="number">1</span>
+                <span class="number">2</span>
+                <span class="number">3</span>
+                <span class="number">4</span>
+                <span class="number">5</span>
+                <span class="number">6</span>
+                <span class="number">7</span>
+                <span class="number">8</span>
+            </div>
+    
+            <div class="letters-container">
+                <span class="letter">a</span>
+                <span class="letter">b</span>
+                <span class="letter">c</span>
+                <span class="letter">d</span>
+                <span class="letter">e</span>
+                <span class="letter">f</span>
+                <span class="letter">g</span>
+                <span class="letter">h</span>
+            </div>
+
+            <div class="cell white" id="a8">
+                <img src="images/brook.png" class="piece brook">
+            </div>
+            <div class="cell black" id="b8">
+                <img src="images/bknight.png" class="piece bknight">
+            </div>
+            <div class="cell white" id="c8">
+                <img src="images/bbishop.png" class="piece bbishop">
+            </div>
+            <div class="cell black" id="d8">
+                <img src="images/bqueen.png" class="piece bqueen">
+            </div>
+            <div class="cell white" id="e8">
+                <img src="images/bking.png" class="piece bking">
+            </div>
+            <div class="cell black" id="f8">
+                <img src="images/bbishop.png" class="piece bbishop">
+            </div>
+            <div class="cell white" id="g8">
+                <img src="images/bknight.png" class="piece bknight">
+            </div>
+            <div class="cell black" id="h8">
+                <img src="images/brook.png" class="piece brook">
+            </div>
+
+            <div class="cell black" id="a7">
+                <img src="images/bpawn.png" class="piece bpawn">
+            </div>
+            <div class="cell white" id="b7">
+                <img src="images/bpawn.png" class="piece bpawn">
+            </div>
+            <div class="cell black" id="c7">
+                <img src="images/bpawn.png" class="piece bpawn">
+            </div>
+            <div class="cell white" id="d7">
+                <img src="images/bpawn.png" class="piece bpawn">
+            </div>
+            <div class="cell black" id="e7">
+                <img src="images/bpawn.png" class="piece bpawn">
+            </div>
+            <div class="cell white" id="f7">
+                <img src="images/bpawn.png" class="piece bpawn">
+            </div>
+            <div class="cell black" id="g7">
+                <img src="images/bpawn.png" class="piece bpawn">
+            </div>
+            <div class="cell white" id="h7">
+                <img src="images/bpawn.png" class="piece bpawn">
+            </div>
+
+            <div class="cell white" id="a6">
+            </div>
+            <div class="cell black" id="b6"></div>
+            <div class="cell white" id="c6"></div>
+            <div class="cell black" id="d6"></div>
+            <div class="cell white" id="e6"></div>
+            <div class="cell black" id="f6"></div>
+            <div class="cell white" id="g6"></div>
+            <div class="cell black" id="h6"></div>
+
+            <div class="cell black" id="a5">
+            </div>
+            <div class="cell white" id="b5"></div>
+            <div class="cell black" id="c5"></div>
+            <div class="cell white" id="d5"></div>
+            <div class="cell black" id="e5"></div>
+            <div class="cell white" id="f5"></div>
+            <div class="cell black" id="g5"></div>
+            <div class="cell white" id="h5"></div>
+
+            <div class="cell white" id="a4">
+            </div>
+            <div class="cell black" id="b4"></div>
+            <div class="cell white" id="c4"></div>
+            <div class="cell black" id="d4"></div>
+            <div class="cell white" id="e4"></div>
+            <div class="cell black" id="f4"></div>
+            <div class="cell white" id="g4"></div>
+            <div class="cell black" id="h4"></div>
+
+            <div class="cell black" id="a3">
+            </div>
+            <div class="cell white" id="b3"></div>
+            <div class="cell black" id="c3"></div>
+            <div class="cell white" id="d3"></div>
+            <div class="cell black" id="e3"></div>
+            <div class="cell white" id="f3"></div>
+            <div class="cell black" id="g3"></div>
+            <div class="cell white" id="h3"></div>
+
+            <div class="cell white" id="a2">
+                <img src="images/wpawn.png" class="piece wpawn">
+            </div>
+            <div class="cell black" id="b2">
+                <img src="images/wpawn.png" class="piece wpawn">
+            </div>
+            <div class="cell white" id="c2">
+                <img src="images/wpawn.png" class="piece wpawn">
+            </div>
+            <div class="cell black" id="d2">
+                <img src="images/wpawn.png" class="piece wpawn">
+            </div>
+            <div class="cell white" id="e2">
+                <img src="images/wpawn.png" class="piece wpawn">
+            </div>
+            <div class="cell black" id="f2">
+                <img src="images/wpawn.png" class="piece wpawn">
+            </div>
+            <div class="cell white" id="g2">
+                <img src="images/wpawn.png" class="piece wpawn">
+            </div>
+            <div class="cell black" id="h2">
+                <img src="images/wpawn.png" class="piece wpawn">
+            </div>
+
+            <div class="cell black" id="a1">
+                <img src="images/wrook.png" class="piece wrook">
+            </div>
+            <div class="cell white" id="b1">
+                <img src="images/wknight.png" class="piece wknight">
+            </div>
+            <div class="cell black" id="c1">
+                <img src="images/wbishop.png" class="piece wbishop">
+            </div>
+            <div class="cell white" id="d1">
+                <img src="images/wqueen.png" class="piece wqueen">
+            </div>
+            <div class="cell black" id="e1">
+                <img src="images/wking.png" class="piece wking">
+            </div>
+            <div class="cell white" id="f1">
+                <img src="images/wbishop.png" class="piece wbishop">
+            </div>
+            <div class="cell black" id="g1">
+                <img src="images/wknight.png" class="piece wknight">
+            </div>
+            <div class="cell white" id="h1">
+                <img src="images/wrook.png" class="piece wrook">
+            </div>
+    
+        </div>
+
+        <div class="moves-board" style="display: none;">
+
+            <p class="sth">Board Moves</p>
+
+        </div>
+
+        <div class="points" style="display: none;">
+
+            <div class="white-black-points">
+    
+                <p>White points: </p>
+                <p id="white-points">0</p>
+    
+            </div>
+    
+            <div class="white-black-points">
+    
+                <p>Black points: </p>
+                <p id="black-points">0</p>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    <script src="chess.js"></script>
+</body>
+</html>

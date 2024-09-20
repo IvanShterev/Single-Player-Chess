@@ -1,0 +1,297 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #302E2B;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    display: flex;
+    margin: 50px auto;
+    gap: 30px;
+    justify-content: center;
+}
+
+.numbers-container, .letters-container{
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.numbers-container{
+    height: 100%;
+    flex-direction: column-reverse;
+    left: 0;
+}
+
+.number, .letter{
+    box-sizing: border-box;
+    padding: 5px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.number{
+    width: 1px;
+    height: 98px;
+}
+
+.letter{
+    width: 98px;
+    height: 1px;
+}
+
+.coordinate:nth-child(2n), .reverse:nth-child(2n+1){
+    color: #739552;
+}
+
+.coordinate:nth-child(2n+1), .reverse:nth-child(2n){
+    color: #EBECD0;
+}
+
+.letters-container{
+    width: 100%;
+    bottom: 0;
+}
+
+.letter{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.choose-side-container{
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #262522;
+    height: 400px;
+    width: 700px;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3),
+                0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.choose-btn{
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    margin-top: 25px;
+}
+
+.choose-btn:hover{
+    border: 3px solid #9ECE5D;
+}
+
+#choose-white{
+    background-image: url('images/wking.png');
+    background-color: #1E1E1B;
+}
+
+#choose-black{
+    background-image: url('images/bking.png');
+    background-color: white;
+}
+
+.btns-container{
+    display: flex;
+    gap: 60px;
+}
+
+.board{
+    flex-flow: row wrap;
+    height: 784px;
+    width: 784px;
+    position: relative;
+    user-select: none;
+}
+
+.cell{
+    height: 98px;
+    width: 98px;
+    position: relative;
+    user-select: none;
+}
+
+.white{
+    background-color: #EBECD0;
+}
+
+.black{
+    background-color: #739552;
+}
+
+.black-num, .white-num, .black-letter, .white-letter{
+    font-size: 23px;
+}
+
+.black-num, .black-letter{
+    color: #739552;
+}
+
+.white-num, .white-letter{
+    color: #EBECD0;
+}
+
+.black-num, .white-num{
+    position: absolute;
+    top: 3px;
+    left: 5px;
+}
+
+.black-letter, .white-letter{
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+}
+
+.piece{
+    height: 95px;
+    width: 95px;
+}
+
+.sth{
+    color: white;
+}
+
+.black.clicked{
+    background-color: #B9CA43;
+}
+
+.white.clicked{
+    background-color: #F5F682;
+}
+
+.black.last-position{
+    background-color: #B9CA43;
+}
+
+.white.last-position{
+    background-color: #F5F682;
+}
+
+.black.last-move{
+    background-color: #B9CA43;
+}
+
+.white.last-move{
+    background-color: #F5F682;
+}
+
+.under-check{
+    background-color: #B94A29;
+}
+
+.possible-move{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    background-color: #9ECE5D;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#promote-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.promote-square{
+    width: 98px;
+    height: 98px;
+    z-index: 10;
+}
+
+.moves-board{
+    background-color: #262522;
+    height: 784px;
+    width: 500px;
+    text-align: center;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.move{
+    display: flex;
+    color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+#move-turn{
+    margin-left: 10px;
+}
+
+#move-from-to{
+    margin-left: 50px;
+}
+
+.points{
+    position: absolute;
+    bottom: 20px;
+    left: 500px;
+    gap: 200px;
+}
+
+.white-black-points{
+    display: flex;
+    gap: 5px;
+    color: white;
+}
+
+.draggable{
+    width: 40px;
+    height: 40px;
+}
+
+.endDiv{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #1E1E1B;
+    border: none;
+    border-radius: 12px;
+    position: absolute;
+    margin-top: 100px;
+    margin-right: 520px;
+}
+
+.endDiv button{
+    background-color: #81B64C;
+    cursor: pointer;
+    height: 80px;
+    width: 300px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: x-large;
+    font-weight: 800;
+    margin-top: 60px;
+}
+
+.endDiv button:focus{
+    background-color: #7da545;
+}
