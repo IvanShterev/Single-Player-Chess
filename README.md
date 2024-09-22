@@ -7,6 +7,6 @@ How to play:
 
 When hovering over a cell with a legal move, the legal move marker will disappear. However, if the cell originally had a legal move marker, you can still place the piece there. Drop the piece on a cell without a legal move to make the markers appear again.
 
-!!! If an error occurs, the game will be terminated, and you will have to start over.
+!!! If an error occurs, the game will be terminated, and you will have to start over. En Passant doesn't work with this API, so it isn't in the game!
 
 Enjoy playing!
