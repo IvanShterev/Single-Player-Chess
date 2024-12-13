@@ -13,3 +13,11 @@ Important!!!
 3. Be careful when moving a piece not to put your king in check! The game doesn't prevent you from making a move that puts your own king in check. If you do, the game will be terminated!
 
 Enjoy playing!
+
+![image](https://github.com/user-attachments/assets/6f637157-2456-4cb0-9e9f-861d144374b9)
+
+
+![image](https://github.com/user-attachments/assets/ae18e5f1-c812-4d86-acb3-0b0f5c154507)
+
+
+![image](https://github.com/user-attachments/assets/9bfe7983-a7b8-40e8-bbab-532ecb7a0ea7)
