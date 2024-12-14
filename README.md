@@ -20,4 +20,5 @@ Enjoy playing!
 ![image](https://github.com/user-attachments/assets/ae18e5f1-c812-4d86-acb3-0b0f5c154507)
 
 
+Click Play again to restart
 ![image](https://github.com/user-attachments/assets/9bfe7983-a7b8-40e8-bbab-532ecb7a0ea7)
